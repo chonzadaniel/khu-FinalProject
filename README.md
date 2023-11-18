@@ -107,8 +107,11 @@ Using train_test_split() method imported from sklearn.model_selection was able t
 # Building the Model, Training, and Testing:
 ## Model Algorith
 
-<img src="[(https://www.researchgate.net/publication/348025909/figure/fig2/AS:1020217916416002@1620250314481/Simplified-structure-of-XGBoost.ppm)]">
+<img src="https://www.mdpi.com/applsci/applsci-12-02126/article_deploy/html/images/applsci-12-02126-g003-550.jpg">
 
+Source: https://www.mdpi.com/2076-3417/12/4/2126
+
+<img src="https://www.researchgate.net/publication/348025909/figure/fig2/AS:1020217916416002@1620250314481/Simplified-structure-of-XGBoost.ppm">
 Source: https://www.researchgate.net/figure/Simplified-structure-of-XGBoost_fig2_348025909
 
 ## Model Dependencies/Requirements:
