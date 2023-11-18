@@ -106,9 +106,9 @@ Using train_test_split() method imported from sklearn.model_selection was able t
 
 # Building the Model, Training, and Testing:
 ## Model Algorith
-<img src = "[https://www.researchgate.net/profile/Lara-Demajo/publication/350874464/figure/fig2/AS:1012594076827648@1618432649350/XGBoost-model-Source-Self.ppm](https://www.researchgate.net/profile/Li-Mingtao-2/publication/335483097/figure/fig3/AS:934217085100032@1599746118459/A-general-architecture-of-XGBoost.ppm)">
 
-<img src="[https://www.researchgate.net/profile/Lara-Demajo/publication/350874464/figure/fig2/AS:1012594076827648@1618432649350/XGBoost-model-Source-Self.ppm](https://www.researchgate.net/profile/Li-Mingtao-2/publication/335483097/figure/fig3/AS:934217085100032@1599746118459/A-general-architecture-of-XGBoost.ppm)" />
+<img src="[[[https://www.researchgate.net/profile/Lara-Demajo/publication/350874464/figure/fig2/AS:1012594076827648@1618432649350/XGBoost-model-Source-Self.ppm](https://www.researchgate.net/profile/Li-Mingtao-2/publication/335483097/figure/fig3/AS:934217085100032@1599746118459/A-general-architecture-of-XGBoost.ppm)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FSimplified-structure-of-XGBoost_fig2_348025909&psig=AOvVaw2lclQFzPomn__lM_lfKGj7&ust=1700404486813000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKi34eDkzYIDFQAAAAAdAAAAABAD)](https://www.researchgate.net/publication/348025909/figure/fig2/AS:1020217916416002@1620250314481/Simplified-structure-of-XGBoost.ppm)">
+
 Source: https://www.researchgate.net/figure/A-general-architecture-of-XGBoost_fig3_335483097
 
 ## Model Dependencies/Requirements:
