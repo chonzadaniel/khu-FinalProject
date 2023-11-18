@@ -89,22 +89,26 @@ Dataset is loaded -- creating a DataFrame using the Pandas library through a rea
 
 ## Features Engineering/Features Transformation
 * Except for Time and Class features, which already were in binary format with integer datatype, the rest of features required transformation by scalling down continuous values to limiting them to between 0 and 1 uning the MinMaxScaler() method supported by the sklearn.preprocessing library.
-* A preprocessor variable for the ColumnTransformer was created as well befor a Machine Learning Model being created.
+* A preprocessor variable for the ColumnTransformer was created as well before a Machine Learning Model being built.
 
 ## Performed X_train, y_train split:
 Using train_test_split() method imported from sklearn.model_selection was able to store X_train, y_train, X_test, y_test sets
 
 # Model Selection:
 ## Given the nature of the problem statement, dataset, and required project procedures, the eXtreme Gradient Boost (XGBoost) model was selected among other models, which are capable of conducting predictions on binary classes. Below are a few summarized factors:
-* Overal Model performance.
-* Regularization techniques.
-* Handling of missing data.
-* Model interpretability.
-* Community support.
+*  Nature of Dataset (imbalanced) whereby XGBClassifier() performs overall best comparatively.
+* Model flexibility in case:
+  * Regularization techniques required.
+  * Handling of missing data the case.
+  * Model interpretability ability to plot feature importance, confusion matrix, and classfication report.
+  * Scalability of the model as the model could handle large dataset clients may have.
+  * Community support making reliability to access key information for future model usability and improvement.
 
 # Building the Model, Training, and Testing:
 ## Model Algorith
-<img src = "https://www.researchgate.net/profile/Lara-Demajo/publication/350874464/figure/fig2/AS:1012594076827648@1618432649350/XGBoost-model-Source-Self.ppm">
+<img src = "[https://www.researchgate.net/profile/Lara-Demajo/publication/350874464/figure/fig2/AS:1012594076827648@1618432649350/XGBoost-model-Source-Self.ppm](https://www.researchgate.net/profile/Li-Mingtao-2/publication/335483097/figure/fig3/AS:934217085100032@1599746118459/A-general-architecture-of-XGBoost.ppm)">
+
+Source: https://www.researchgate.net/figure/A-general-architecture-of-XGBoost_fig3_335483097
 
 ## Model Dependencies/Requirements:
 * Python Programming Language: for coding
@@ -129,17 +133,19 @@ Using train_test_split() method imported from sklearn.model_selection was able t
 * Then prediction made (y_pred) of the model pipeline(X_test) applied
 
 ## Checking for model Performance using different Peformance using pandas, accuracy_score, confusion_matrix, classification_report, matplotlib.pyplot, seaborn
-* From accuracy_score(y_test, y_pred), model accuracy could be printed.
-* Plotted confusion matrix after creating confusion_matrix(y_test, y_pred).
+* From both accuracy_score(y_train, y_train_pred) and accuracy_score(y_test, y_pred) methods, model accuracy at training and testing sets could be printed.
+* Plotted confusion matrix.
 * Printed a classification report where accuracy, precision, recall, and f1-score metrics are displayed.
+* Plotting feature importance helped optiminzation of the model combination of features given the order of feature on the plot. Features way at the least order were dropped leading to a well performing model across performance metrics.
 
 ## Model Metrics Interpretation
-* Given this project, the minimum (model accuracy threshold) provided is 75%, from which the project should produce accuracy greater than. The model performance on local environment produced: accuracy (99%), precision (99%), recall (99%), and f1-score (99%) while on AWS SageMaker with a training and testing Accuracy of 84%.
+* Given this project, the minimum (model accuracy threshold) provided is 75%, from which the project should produce accuracy greater than. The model performance on local environment produced: training and testing precision (100%), recall (100%), and f1-score (100%) with both training and testing accuracy consistently at 100%. Hence, we good performing model in determining whether credit card transactions are fraudulents or not.
 
 ## Model Hyperparameter Fine-tuning:
-* On local environment, there was less contribution made by applying GridSearch estimator on the model. Hence, for efficiency and computional reasons, is important to use less parameters as optimal as possible as similar results will be achieved.
+* On local environment, there was less hyperparameter fine-tuning improvement on the overall model performance. Hence, for efficiency and computional reasons, is important to use less parameters as optimal as possible as similar results will be achieved.
 
 # Model Usability:
+* The use of the model is very simple becuase it does not require hyperparamenter fine-tuning. Hence, computation time and cost minimized.
 * Potential for Cost Savings: Using this model by the Bank may save money in preventing fraudulent transactions. It can also improve customer satisfaction by reducing the number of legitimate transactions incorrectly flagged as fraudulent.
 * Model Resilience and reliability. This model may maintain its fraudulent predictive power (performance) on unseen data, which is important in a real-world setting where  transactions distribution changes over time.
 * Monitoring and Adaptation: Even with a high-performing model, it's essential to continuously monitor its performance and adapt it as needed. Fraudsters can change their tactics, and the model should be updated to address evolving threats related to creditcards' transactions.
