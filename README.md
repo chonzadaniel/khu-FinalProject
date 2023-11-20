@@ -104,7 +104,7 @@ Using train_test_split() method imported from sklearn.model_selection was able t
 * Model flexibility in case:
   * Regularization techniques required.
   * Handling of missing data the case.
-  * Model interpretability ability to plot feature importance, confusion matrix, and classfication report.
+  * Model interpretability ability to plot feature importance, confusion matrix, and classification report.
   * Scalability of the model as the model could handle large dataset clients may have.
   * Community support making reliability to access key information for future model usability and improvement.
 
