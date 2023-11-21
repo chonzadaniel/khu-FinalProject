@@ -147,12 +147,12 @@ Source: https://www.mdpi.com/2076-3417/12/4/2126
 * Given this project, the minimum (model accuracy threshold) provided is 75%, from which the project should produce accuracy greater than. The model performance on local environment produced: training and testing precision (100%), recall (100%), and f1-score (100%) with both training and testing accuracy consistently at 100%. Hence, we good performing model in determining whether credit card transactions are fraudulents or not.
 
 ## Model Hyperparameter Fine-tuning:
-* On local environment, there was less hyperparameter fine-tuning improvement on the overall model performance. Hence, for efficiency and computional reasons, is important to use less parameters as optimal as possible as similar results will be achieved.
+* On local environment, there was less hyperparameter fine-tuning improvement on the overall model performance. Hence, saving cost because of the model efficiency and computional simplicity.
 
 # Model Usability:
-* The use of the model is very simple becuase it does not require hyperparamenter fine-tuning. Hence, computation time and cost minimized.
-* Potential for Cost Savings: Using this model by the Bank may save money in preventing fraudulent transactions. It can also improve customer satisfaction by reducing the number of legitimate transactions incorrectly flagged as fraudulent.
-* Model Resilience and reliability. This model may maintain its fraudulent predictive power (performance) on unseen data, which is important in a real-world setting where  transactions distribution changes over time.
+* High Net Promoter Score (NPS) -- Banks are doing great with far more happy customers than unhappy ones.
+* Potential Overall Cost Savings: Using this model by the Bank may save money in preventing fraudulent transactions. It can also improve customer satisfaction by reducing the number of legitimate transactions incorrectly flagged as fraudulent.
+* Model Resilience and reliability. This model may maintain its fraudulent predictive power (performance) on unseen data, which is important in a real-world setting where  transactions distribution changes over time. Hence, increased demand for the credit cards services.
 * Monitoring and Adaptation: Even with a high-performing model, it's essential to continuously monitor its performance and adapt it as needed. Fraudsters can change their tactics, and the model should be updated to address evolving threats related to creditcards' transactions.
 * Customer Communication: In the banking domain, clear communication with customers is essential. Customers should be informed about the bank's fraud detection methods and how they can protect themselves. An overzealous fraud detection system may sometimes lead to customer inconvenience.
 * Marketing Strategy: The bank may use the high-performance model promoting itself as a secure place to conduct financial transactions, emphasizing the commitment to protecting customers from fraud.
