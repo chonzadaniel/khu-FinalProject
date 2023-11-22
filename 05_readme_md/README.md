@@ -64,7 +64,7 @@ Dataset is loaded -- creating a DataFrame using the Pandas library through a rea
   * Generate Synthetic Samples: SMOTE works by generating synthetic samples for the minority class. It does this by selecting a sample from the minority class and finding its k-nearest neighbors within that class.
   * Interpolation: Once the nearest neighbors are identified, SMOTE creates synthetic samples by interpolating between the selected sample and its neighbors. The synthetic samples are created by selecting a fraction of the distance between the selected sample and each of its neighbors.
   * Balance the Classes: By generating synthetic samples for the minority class, SMOTE helps balance the class distribution. This makes the dataset more balanced and prevents the model from being biased toward the majority class.
-  * After Experimenting both the Undersampling and OverSampling Methods/techiniques, it turned out that SMOTE was working well on the model performance, hence chosen.
+  * After Experimenting both the Undersampling and OverSampling Methods/techniques, it turned out that SMOTE was working well on the model performance, hence chosen.
 
 ## Concatenating the SMOTE resampled X and Y features to recover a DataFrame
 * df = pd.concat() method was applied.
@@ -118,15 +118,12 @@ Source: https://www.mdpi.com/2076-3417/12/4/2126
 ## Model Dependencies/Requirements:
 * Python Programming Language: for coding
 * xgboost: for building the model classifier
+* SMOTE: for dealing with dataset imbalance
 * scikit-learn: for building the model estimator
 * pandas: for loading dataset
-* AWS sagemaker: for deploying the model
 * numpy: for numeric calcumlation across code snippets
-* joblib: for saving and loading models
 * matplotlib: for image/plots/charts during training, and testing
 * seaborn: for image/plots/charts -- confusion matrix
-* s3fs: for storage
-* argparse: provides command-line arguments and options in defining training scripts.
   
 ## Building the XGBoost Model Classifier:
 * The XGBoost classifier was built using the XGBClassier() methond imported from xgboost.
